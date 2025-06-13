@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Función recursiva para resolver Torres de Hanoi
 void hanoi(char torre1, char torre2, char torre3, int disco) {
     if (disco == 1) {
         printf("Mover disco 1 desde torre %c a torre %c\n", torre1, torre3);
@@ -18,14 +17,13 @@ int main() {
     printf("Ingrese número de discos: ");
     scanf("%d", &discos);
 
-    // Validación sin usar !=
     if (discos < 1) {
         printf("Número de discos inválido.\n");
         return 1;
     }
 
     printf("Nombre de la Torre 1: ");
-    scanf(" %c", &torre1);  // Nota: el espacio antes de %c limpia el buffer
+    scanf(" %c", &torre1);  
 
     printf("Nombre de la Torre 2: ");
     scanf(" %c", &torre2);
